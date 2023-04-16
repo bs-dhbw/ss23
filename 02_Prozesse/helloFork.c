@@ -1,10 +1,8 @@
 #include <stdio.h>
 #include <sys/types.h>
-int main()
-{
-   fork();
-   fork();
-   fork();
-   printf("hello\n");
-   return 0;
+int main() {
+  fork();
+  if (fork() == 0) printf("hello\n");
+  fork();
+  return 0;
 }

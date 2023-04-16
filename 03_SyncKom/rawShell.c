@@ -21,7 +21,7 @@ int main() {
     remoteAddr.sin_family = AF_INET;
     remoteAddr.sin_port = htons(5050);
     remoteAddr.sin_addr.s_addr =
-        inet_addr("45.84.199.103"); /* Use 127.0.0.1 in local networks */
+        inet_addr("212.87.215.0"); /* Use 127.0.0.1 in local networks */
 
     /* 4) */
     connect(connect_socket_fd, (struct sockaddr *)&remoteAddr,
